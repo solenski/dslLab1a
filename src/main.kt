@@ -22,13 +22,15 @@ class MyView : View() {
             return 0
         }
 
-    private val noNumber: Boolean get() {
-        return !stack.any { value -> numbers.contains(value) }
-    }
+    private val noNumber: Boolean
+        get() {
+            return !stack.any { value -> numbers.contains(value) }
+        }
 
-    private val noOp: Boolean get() {
-        return !stack.any { value -> operators.contains(value) }
-    }
+    private val noOp: Boolean
+        get() {
+            return !stack.any { value -> operators.contains(value) }
+        }
 
 
     private val lastValue: Int
@@ -62,6 +64,7 @@ class MyView : View() {
                     lastPriority == 0 -> stack.push(buttonPressed)
                     operators.getValue(buttonPressed) <= lastPriority -> {
                         recalculate()
+                        updateUI();
                         stack.push(buttonPressed)
                     }
                     else -> stack.push(buttonPressed)
@@ -71,8 +74,7 @@ class MyView : View() {
                 buttonPressed == ")" -> recalculate()
             }
             updateUI()
-        }
-        catch (e : Exception) {
+        } catch (e: Exception) {
 
             (root.children[0] as TextField).text = "Error"
             stack.clear();
@@ -84,16 +86,31 @@ class MyView : View() {
     private fun updateUI() {
 
         (root.children[0] as TextField).text = stack.toString().filter { item -> item != ',' && item != '[' && item != ']' && !item.isWhitespace() }
+
+        var stackCopy = stack.clone() as Stack<String>
+        var sb = StringBuilder();
+
+        while (!stackCopy.empty()) {
+            if (!operators.containsKey(stackCopy.peek()) && stackCopy.peek() != "(") {
+                sb.append(stackCopy.pop())
+            } else
+                break
+        }
+
+        if (!sb.isEmpty())
+            (root.children[1] as TextField).text = sb.toString().reversed()
+
     }
 
     private fun recalculate() {
         var stack_copy = this.stack.clone() as Stack<String>
+
         while (stack.size != 1 && stack.peek() != "(") {
             var firstStr = ""
             while (!stack.empty() && !operators.containsKey(stack.peek()) && stack.peek() != "(") {
                 firstStr += stack.pop()
             }
-            if(!stack.empty() && stack.peek() == "-")
+            if (!stack.empty() && stack.peek() == "-")
                 firstStr += stack.pop()
 
             firstStr = firstStr.reversed()
@@ -108,7 +125,7 @@ class MyView : View() {
                 secondStr += stack.pop()
             }
 
-            if(!stack.empty() && stack.peek() == "-")
+            if (!stack.empty() && stack.peek() == "-")
                 secondStr += stack.pop()
 
             secondStr = secondStr.reversed()
@@ -135,11 +152,15 @@ class MyView : View() {
 
     private fun clearStack() {
         stack.clear()
+        (root.children[1] as TextField).text = ""
+
         updateUI()
     }
 
     override var root = vbox {
         textfield { isEditable = false }
+        textfield { isEditable = false }
+
         hbox {
             button("1") {
                 action {
@@ -166,6 +187,7 @@ class MyView : View() {
                     clearStack()
                 }
             }
+
         }
         hbox {
             button("4") {
