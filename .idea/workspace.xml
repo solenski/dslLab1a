@@ -3,14 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="1dfe610b-e703-4ec6-bae9-b84772058dc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$2$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$3$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$4$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MainKt.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MainKt.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$1$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$2$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$2$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$2.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$3$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$3$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$3.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$4$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$4.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$1$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$2$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$2$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$2.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$3$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$3$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$3.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$4$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$4.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$1$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$2$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$2$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$2.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$3$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$3$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$3.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$4$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$4.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1$5.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView$root$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TornadoFX/MyView.class" afterPath="$PROJECT_DIR$/out/production/TornadoFX/MyView.class" />
       <change beforePath="$PROJECT_DIR$/src/main.kt" afterPath="$PROJECT_DIR$/src/main.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +50,8 @@
       <file leaf-file-name="main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="110" column="39" lean-forward="true" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+            <state relative-caret-position="275">
+              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#214#0" expanded="true" />
               </folding>
@@ -89,36 +113,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyView.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/TornadoFX/MyView.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyApp.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/TornadoFX/MyApp.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainKt.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/TornadoFX/MainKt.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -128,6 +122,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -141,9 +140,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="130" />
-    <option name="y" value="313" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="370" />
+    <option name="y" value="348" />
     <option name="width" value="1401" />
     <option name="height" value="999" />
   </component>
@@ -180,13 +179,6 @@
               <item name="TornadoFX" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TornadoFX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TornadoFX" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TornadoFX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TornadoFX" type="b2602c69:ProjectViewProjectNode" />
@@ -340,6 +332,14 @@
       <option name="presentableId" value="Default" />
       <updated>1520174251264</updated>
     </task>
+    <task id="LOCAL-00001" summary="&#10;new">
+      <created>1521987851871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521987851871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -348,13 +348,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27300614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27198365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -377,11 +377,20 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;new" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;new" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="stack" />
+        <watch expression="secondStr" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/TornadoFX/MyApp.class">
@@ -389,26 +398,6 @@
         <state relative-caret-position="54">
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/javafx.graphics/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding>
-            <element signature="e#4623#4624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/javafx.graphics/javafx/scene/Parent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="693" column="0" lean-forward="false" selection-start-line="693" selection-start-column="0" selection-end-line="693" selection-end-column="0" />
-          <folding>
-            <element signature="e#28334#28335#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -462,10 +451,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/javafx.graphics/javafx/scene/Parent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="693" column="0" lean-forward="false" selection-start-line="693" selection-start-column="0" selection-end-line="693" selection-end-column="0" />
+          <folding>
+            <element signature="e#28334#28335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/javafx.graphics/javafx/scene/layout/Pane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <element signature="e#4623#4624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="110" column="39" lean-forward="true" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+        <state relative-caret-position="275">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#0#214#0" expanded="true" />
           </folding>

@@ -9,7 +9,9 @@ import java.util.*
 class MyApp : App(MyView::class)
 
 class MyView : View() {
+
     private var stack = Stack<String>()
+    private var accumulator = Stack<String>()
     private val numbers = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".")
     private val operators = mapOf("+" to 1, "-" to 1, "*" to 2, "/" to 2)
 
@@ -22,25 +24,8 @@ class MyView : View() {
             return 0
         }
 
-    private val noNumber: Boolean
-        get() {
-            return !stack.any { value -> numbers.contains(value) }
-        }
-
-    private val noOp: Boolean
-        get() {
-            return !stack.any { value -> operators.contains(value) }
-        }
 
 
-    private val lastValue: Int
-        get () {
-            val result = stack.lastOrNull { it.toIntOrNull() != null }
-            if (result != null) {
-                return result.toInt()
-            }
-            return 0
-        }
 
     fun calculate(first: Float, second: Float, op: String): Float {
         return when (op) {
@@ -57,27 +42,63 @@ class MyView : View() {
 
     fun resolve(buttonPressed: String) {
 
+        if(stack.empty() && operators.containsKey(buttonPressed) && accumulator.empty())
+        {
+            accumulator.push("0");
+        }
+
+        if(accumulator.empty() && buttonPressed == ".")
+        {
+            accumulator.push("0");
+        }
+
+        if(!numbers.contains(buttonPressed) && !accumulator.empty())
+        {
+            stack.push(accumulator.joinToString(""))
+            accumulator.clear()
+        }
+
+        if(!stack.empty() && operators.containsKey(buttonPressed) && operators.containsKey(stack.peek()))
+        {
+            stack.pop()
+        }
+
         try {
             when {
-                numbers.contains(buttonPressed) -> stack.push(buttonPressed)
-                operators.containsKey(buttonPressed) -> when {
-                    lastPriority == 0 -> stack.push(buttonPressed)
-                    operators.getValue(buttonPressed) <= lastPriority -> {
-                        recalculate()
-                        updateUI();
-                        stack.push(buttonPressed)
+                numbers.contains(buttonPressed) -> accumulator.push(buttonPressed)
+                operators.containsKey(buttonPressed) -> {
+                    when {
+                        lastPriority == 0 -> {
+
+                            stack.push(buttonPressed)
+                        }
+                        operators.getValue(buttonPressed) <= lastPriority -> {
+                            recalculate()
+                            updateUI()
+                            stack.push(buttonPressed)
+                        }
+                        else -> {
+                            stack.push(buttonPressed)
+                        }
                     }
-                    else -> stack.push(buttonPressed)
                 }
-                buttonPressed == "=" -> recalculate()
-                buttonPressed == "(" -> stack.push(buttonPressed)
-                buttonPressed == ")" -> recalculate()
+                buttonPressed == "=" -> {
+
+                    recalculate()
+                }
+                buttonPressed == "(" -> {
+                    stack.push(buttonPressed)
+                }
+                buttonPressed == ")" -> {
+                    recalculate(true)
+                }
             }
             updateUI()
         } catch (e: Exception) {
 
             (root.children[0] as TextField).text = "Error"
-            stack.clear();
+            stack.clear()
+            accumulator.clear()
         }
 
 
@@ -86,64 +107,43 @@ class MyView : View() {
     private fun updateUI() {
 
         (root.children[0] as TextField).text = stack.toString().filter { item -> item != ',' && item != '[' && item != ']' && !item.isWhitespace() }
+        if(!accumulator.empty())
+        {
+            (root.children[1] as TextField).text =  accumulator.joinToString("");
+        }
+        else
+        {
+            if(!stack.empty())
+            (root.children[1] as TextField).text = stack.peek()
 
-        var stackCopy = stack.clone() as Stack<String>
-        var sb = StringBuilder();
-
-        while (!stackCopy.empty()) {
-            if (!operators.containsKey(stackCopy.peek()) && stackCopy.peek() != "(") {
-                sb.append(stackCopy.pop())
-            } else
-                break
         }
 
-        if (!sb.isEmpty())
-            (root.children[1] as TextField).text = sb.toString().reversed()
 
     }
 
-    private fun recalculate() {
-        var stack_copy = this.stack.clone() as Stack<String>
+    private fun recalculate(deletePar: Boolean = false) {
 
         while (stack.size != 1 && stack.peek() != "(") {
-            var firstStr = ""
-            while (!stack.empty() && !operators.containsKey(stack.peek()) && stack.peek() != "(") {
-                firstStr += stack.pop()
-            }
-            if (!stack.empty() && stack.peek() == "-")
-                firstStr += stack.pop()
+            var stack_copy = this.stack.clone() as Stack<String>
 
-            firstStr = firstStr.reversed()
+            var firstStr = stack.pop()
+
 
             val op = stack.pop()
             if (!operators.containsKey(op)) {
                 this.stack = stack_copy
                 break
             }
-            var secondStr = ""
-            while (!stack.empty() && !operators.containsKey(stack.peek()) && stack.peek() != "(") {
-                secondStr += stack.pop()
-            }
 
-            if (!stack.empty() && stack.peek() == "-")
-                secondStr += stack.pop()
+            var secondStr = stack.pop();
 
-            secondStr = secondStr.reversed()
 
-            if (!stack.empty() && stack.peek() == "(")
+
+            if (!stack.empty() && stack.peek() == "(" && deletePar)
                 stack.pop()
 
-            if (stack.empty()) {
-                calculate(firstStr.toFloat(), secondStr.toFloat(), op)
-                        .toString()
-                        .forEach { value -> stack.push(value.toString()) }
-                break
-            } else {
-                calculate(firstStr.toFloat(), secondStr.toFloat(), op)
-                        .toString()
-                        .forEach { value -> stack.push(value.toString()) }
-            }
-
+                stack.push(calculate(firstStr.toFloat(), secondStr.toFloat(), op)
+                        .toString())
 
         }
 
@@ -152,10 +152,14 @@ class MyView : View() {
 
     private fun clearStack() {
         stack.clear()
+        accumulator.clear()
+
         (root.children[1] as TextField).text = ""
 
         updateUI()
     }
+
+
 
     override var root = vbox {
         textfield { isEditable = false }
@@ -271,6 +275,7 @@ class MyView : View() {
 }
 
 fun main(args: Array<String>) {
+
     Application.launch(MyApp::class.java, *args)
 }
 
